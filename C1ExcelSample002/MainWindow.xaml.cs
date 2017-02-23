@@ -30,7 +30,7 @@ namespace C1ExcelSample002
             C1XLBook book = new C1XLBook();
 
             // ファイルを読み込む
-            book.Load(@"C:\Users\macni\Documents\mybook.xls");
+            book.Load(@"C:\<ドキュメントフォルダのパス>\mybook.xls");
 
             // シートを編集する
             book.Sheets[0][0, 0].Value = 5;
@@ -46,7 +46,7 @@ namespace C1ExcelSample002
             FlexGrid.ItemsSource = list;
 
             // 別名で保存する
-            book.Save(@"C:\Users\macni\Documents\mybook2.xls");
+            book.Save(@"\mybook2.xls");
 
         }
 
