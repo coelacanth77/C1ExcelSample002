@@ -1,0 +1,18 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:C1ExcelSample002"
+        xmlns:c1="http://schemas.componentone.com/winfx/2006/xaml" x:Class="C1ExcelSample002.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+
+        <c1:C1FlexGrid x:Name="FlexGrid" HorizontalAlignment="Left" Margin="36,77,0,0" VerticalAlignment="Top" SelectionChanged="FlexGrid_SelectionChanged" Width="200" Height="200" HeadersVisibility="Row"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="133" Margin="40,183,0,0" VerticalAlignment="Top" Width="168"/>
+        <Label x:Name="label" Content="FlexGridに表示" HorizontalAlignment="Left" Margin="33,49,0,0" VerticalAlignment="Top" Width="333"/>
+        <Label x:Name="label_Copy" Content="FlexGridを画像化して表示" HorizontalAlignment="Left" Margin="32,183,0,0" VerticalAlignment="Top" Width="333"/>
+
+    </Grid>
+</Window>
